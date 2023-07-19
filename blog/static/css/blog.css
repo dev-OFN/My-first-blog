@@ -58,33 +58,46 @@ a:hover{
 }
 
 header{
-    background: rgb(61, 16, 80);
+    background: 2px solid #996ed9;
     height: 6.5rem;
     padding: 0;
 }
 
 .search{
-    position: absolute;
-    left: 75%;
-    top: 35px;
-    width: 19rem;
+    position: relative;
+    top: 3.2rem;
+    right: 11rem;
+    width: 25rem;
     height: 1.8rem;
     background:rgb(223, 223, 219) ;
     border-radius: 1rem;
     border: none;
-    /* box-shadow: 0 0 2rem; */
+    box-shadow: 0 0 1rem;
+}
 
+.srch-cont{
+    color: blue;
 }
 
 #sidebar{
     background: rgb(211, 211, 209);
     height: 40rem;
-    padding: 1.5rem;
+    padding: 1rem;
     margin-right: 2rem;
     box-shadow: 0 0 1rem;
     border-radius: 1.2rem;
     position: sticky;
-    top: 1rem;
+    top: 0.5rem;
+}
+
+.most_commented{
+    height: 3rem;
+    line-height:1rem;
+}
+
+.latestp{
+    letter-spacing: 1px;
+    height: 3.7rem;
 }
 
 .posts{
@@ -118,10 +131,6 @@ header{
     outline: none;
 }
 
-.latestp{
-    letter-spacing: 1px;
-    height: 6rem;
-}
 
 footer{
     background: rgb(223, 223, 219);
