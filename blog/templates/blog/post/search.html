@@ -17,11 +17,11 @@
         {% endfor %} 
             <p><a href="{% url 'blog:post_search' %}">Search again</a></p>
     {% else %}
-    <center class="srch-cont">
+    <div class="srch-cont">
         <h1 class="srch">Search for posts</h1>
-        <form action="." method="get">{{ form.as_p }}
-            <input type="submit" value="Search">
+        <form class="form-srch" action="." method="get">{{ form.as_p }}
+            <input class="srch-inp" type="submit" value="Search">
         </form>
-    </center>
+    </div>
     {% endif %}
 {% endblock %}

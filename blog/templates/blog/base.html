@@ -11,13 +11,16 @@
 
     <header>
     <div class="heading">
-        <img class="logo" src="{% static "\blog-images\logo.png" %}" alt="Logo">
+        <img title="logo" class="logo" src="{% static "\blog-images\logo.png" %}" alt="Logo">
         <p class="prop">Property Solutions</p>
         <i class="solving">Solving the issue of housing deficit in Nigeria......</i>
     </div>
-
-   
-    </header>
+</header>
+        <div class="foott3">
+            <p><a style="color:#ffff"href="http://127.0.0.1:8000/blog/"class="foott2">Home |</a></p>
+            <p><a style="color:#ffff"href="http://127.0.0.1:8000/blog/about/"class="foott2" >About Us |</a></p>
+            <p><a style="color: #ffff;" href="#"class="foott2">Contact us</a></p>
+        </div>
     <br>
     <center class="sub-head">
         <a href="http://127.0.0.1:8000/blog/search/">
@@ -34,7 +37,7 @@
         
         <div id="sidebar">
             <h2>My blog</h2>
-            <p>This is my blog. We have published {% total_posts %} posts so far.</p>
+            <marquee>This is my blog. We have published {% total_posts %} posts so far.</marquee>
             <h3>Latest posts</h3>
             {% show_latest_posts 3 %}
             <h3>Most Commented</h3>
@@ -48,34 +51,83 @@
     </div>
     
     <footer>
-        <div class="foot">
+        <!-- <div class="foot">
             <img class="logo" src="{% static "\blog-images\logo.png" %}" alt="Logo">
-            <p class="prop2"><a href="about-us.com"></a> Property Solutions</p>
+            <p class="prop2"> Property Solutions</p>
+        </div> -->
+        <div class="foot3">
+            <h2 style="color: #412867;">A quick one:</h2>
+            <p>
+                Real estate has been proven as one of
+                the most reliable and profitable forms 
+                of investment over time. Unlike other 
+                investment options,real estate offers 
+                tangible assets in the form of properties, 
+                which can appreciate in value and generate
+                regular rental income. The demand for real
+                estate remain strong due to population growth 
+                and urbanization, making it a stable investment choice. 
+            </p>
+            <!-- <p>
+                Additionally,real estate provides a hedge against 
+                inflation,as property values tend to rise along with 
+                the cost of living.However,successful real estate 
+                investment requires careful research, market analysis, 
+                and understanding of local regulations.With proper due 
+                diligence and strategic planning, real estate investment 
+                can offer long-term wealth creation and financial security. 
+            </p> -->
         </div>
 
-        <div class="quote">
-            <p>About Us:
-                ABt is a trusted real estate company dedicated to providing genuine and strategic real estate properties in Nigeria. We specialize in offering prime lands in carefully selected locations, ensuring our clients have access to valuable investment opportunities.
-                
-                At ABt property solutions, our mission is to assist individuals, families, and investors in finding the perfect real estate options that meet their needs and aspirations. Whether you're looking for residential, commercial, or investment properties, we are committed to guiding you every step of the way.
-                
-                Our team of experienced professionals understands the intricacies of the Nigerian real estate market. We stay updated with the latest market trends, investment opportunities, and legal considerations to provide our clients with accurate and up-to-date advice.
-                
-                We pride ourselves on offering transparent and genuine real estate options. We carefully curate our property portfolio, ensuring that every property we present has undergone thorough due diligence. Your trust is of utmost importance to us, and we strive to maintain the highest standards of integrity and professionalism.
-                
-                Beyond providing exceptional real estate options, we also offer comprehensive investment advice. Our knowledgeable experts are dedicated to helping our clients make informed investment decisions that align with their goals and objectives. We understand that each individual has unique requirements, and we tailor our advice to suit your specific needs.
-                
-                At ABt property solutions, we believe that strategic location, genuine properties, and expert guidance are the keys to successful real estate investments. We are committed to assisting you in achieving your real estate dreams and maximizing your investment potential.
-                
-                Contact us today to explore the exciting opportunities available and experience our unparalleled service in the Nigerian real estate market. Let us be your trusted partner on your real estate journey..</p>
-            </div>
+        <div>
+            <ul class="Our-company">
+                <h3 style="color: #412867;">Our company</h3>
+                <li> <a href="http://127.0.0.1:8000/blog/about/">About us</a></li>
+                <li><a href="http://127.0.0.1:8000/blog/terms/">Terms and conditions</a></li>
+                <li><a href="http://127.0.0.1:8000/blog/privacy-policy">Privacy policy</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="http://127.0.0.1:8000/blog">Home</a></li>
+            </ul>
+        </div>
 
-            <div class="foot2">
-                <p>Home</p>
-                <p>Terms and conditions</p>
-                <p>Privacy Policy</p>
-            </div>
-            <hr>
+        <div>
+            <ul class="Our-company">
+                <h3 style="color: #412867;">Social Media</h3>
+                <li><a href="http://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="http://www.twitter.com/therealOFN1" target="_blank"> Twitter</a></li>
+                <li>Github</li>
+                <li>Linkedln</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="Our-company">
+                <h3 style="color: #412867;">Other Real estate companies</h3>
+                <li><a href="http://www.homlandgroup.com" target="_blank">homlandgroup.com</a></li>
+                <li><a href="http://www.naijahouses.com" target="_blank">Naijahouses.com</a></li>
+                <li></li>
+                <!-- <li>Linkedln</li>
+                <li>Instagram</li> -->
+            </ul>
+        </div>
     </footer>
+
+    <div class="foot2">
+        <div class="foot4">
+          <p><a style="color:#ffff" href="http://127.0.0.1:8000/blog/" class="foott2">Home</a></p>
+          <p><a style="color:#ffff" href="http://127.0.0.1:8000/blog/terms/" class="foott2">Terms and conditions</a></p>
+          <p><a style="color:#ffff" href="http://127.0.0.1:8000/blog/privacy-policy" class="foott2">Privacy Policy</a></p>
+          <p><a style="color:#ffff" href="http://127.0.0.1:8000/blog/about/" class="foott2">About Us</a></p>
+        </div>
+
+        <ul class="ul-foot">
+          <li>&copy;2023 |</li>
+          <li>ABtpropertysolutions.com |</li>
+          <li>All Rights Reserved.</li>
+        </ul>
+      
+    </div>
+      
 </body>
 </html>

@@ -12,4 +12,7 @@ urlpatterns=[
     path('feed/', LatestPostsFeed(), name='post_feed'),
     path('search/', views.post_search, name='post_search'),
     path('about/', views.about, name='about-us'),
+    path('terms/',views.terms, name='terms-conditions'),
+    path('privacy-policy',views.privacy, name='privacy-policy'),
+
 ]

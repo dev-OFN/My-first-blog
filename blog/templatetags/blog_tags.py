@@ -16,7 +16,7 @@ def show_latest_posts(count=5):
     return {'latest_posts':latest_posts}
 
 @register.inclusion_tag('blog/post/most_commented.html')
-def get_most_commented_posts(count=5):
+def get_most_commented_posts(count=4):
     most_commented=Post.published.annotate(total_comments=Count('comments')).order_by('-total_comments')[:count]
     return{'most_commented': most_commented}
 @register.filter(name='markdown')

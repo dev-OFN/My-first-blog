@@ -98,3 +98,9 @@ def post_search(request):
 
 def about(request,):
     return render(request,'blog/post/about-us.html')
+
+def terms(request,):
+    return render(request,'blog/post/terms.html')
+
+def privacy(request,):
+    return render(request,'blog/post/Privacy.html')
